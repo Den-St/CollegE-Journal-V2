@@ -1,0 +1,19 @@
+export type JournalT = {
+    can_edit:number,
+    journal:{
+        students:{
+            index:number,
+            full_name:string
+        }[],
+        columns:{
+            column_index:number,
+            theme:string,
+            lesson_type:string,
+            date:string,
+            grades:{
+                student_index:number,
+                value:string
+            }[]
+        }
+    }
+}

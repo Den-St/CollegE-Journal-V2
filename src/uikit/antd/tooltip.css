@@ -1,0 +1,7 @@
+.ant-tooltip-inner{
+	background-color: var(--secondary-blue) !important;
+	font-family: Montserrat !important;
+}
+.ant-tooltip{
+	--antd-arrow-background-color: var(--secondary-blue) !important;
+}

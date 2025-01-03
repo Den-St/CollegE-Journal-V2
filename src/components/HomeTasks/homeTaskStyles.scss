@@ -1,0 +1,371 @@
+.homeTaskMain__container{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    align-items: center;
+    padding-top: 229px;
+    font-family: Montserrat;
+    background-image: url('../../assets/images/signInBackground.png');
+
+}
+.homeTaskSubjects_main{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.homeTaskSubjects_title{
+    margin-left: 5%;
+}
+
+.homeTaskSubjects_container{
+    width: 100%;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.homeTasks_subject{
+    width: 300px;
+    height: 100px;
+    border-radius: 10px 5px;
+    //styleName: H/H3;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    text-align: center;
+    // padding-top: 38px;
+}
+
+.newTask{
+    position: absolute;
+    right: -5px;
+    top:calc(50% - 15px);
+    width: 10px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--primary-orange);
+}
+.homeTasks_subject.inactive{
+    cursor:not-allowed;
+}
+.homeTaskTop__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-left: 10%;
+    width: 100%;
+}
+
+.homeTaskTitle{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.homeTaskFilters__container{
+    display: flex;
+    gap:30px;
+}
+.homeTaskFilter__select{
+    border:none;
+    .ant-select-selector{
+        background-color: transparent !important;
+        border:none !important;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .ant-select-selection-item{
+        color:white !important;
+    }
+}
+.homeTaskFilter__container{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.homeTaskFilter__name{
+    font-size: 28px;
+    font-weight: 500;
+}
+.homeTaskTasks__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 100%;
+    padding: 0 70px;
+}
+
+.homeTaskItem__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.homeTaskItem{
+    padding: 9px 19px 9px 36px;
+    display: flex;
+    gap:30px;
+    align-items: center;
+    border-radius: 10px 5px 10px 5px;
+    .anticon{
+        color:white;
+        font-size: 25px;
+    }
+}
+
+.homeTaskItem__avatar{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 10px 5px;
+}
+
+.homeTaskItemText__container{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    width: fit-content;
+    max-width: 630px;
+}
+
+.homeTaskItem__text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 350px;
+}
+
+
+.homeTaskItem__date{
+    font-size:16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.homeTaskDeadline__container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.homeTaskDeadline__title{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.homeTaskDeadline__date{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.homeTaskCommentsItem__container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap:15px;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.homeTaskCommentsItemNoComment{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.homeTaskCommentsItemComment__container{
+    display: flex;
+    gap:36px;
+}
+
+.homeTaskCommentItem__avatar{
+    width: 45px;
+    height: 45px;
+    border:10px 5px;
+}
+
+.homeTaskCommentItem__text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+.dark{
+    .homeTaskMain__container{
+        background-image: url('../../assets/images/signInBackground.png');
+    }
+    .homeTaskTitle{
+        color:white;
+    }
+    .homeTaskFilter__name{
+        color:white;
+    }
+    .fillterImg{
+        stroke: white;
+    }
+    .homeTaskItem__text{
+        color:white;
+    }
+    .homeTaskItem__date{
+        color:white;
+    }
+    .homeTaskDeadline__title{
+        color:var(--primary-gray);
+    }
+    .homeTaskDeadline__date{
+        color:white;
+    }
+    .homeTaskCommentsItemNoComment{
+        color:var(--primary-gray);
+    }
+    .homeTaskCommentItem__text{
+        color:white;
+    }
+    .homeTaskItem{
+        background-color: var(--secondary-blue);
+    }
+    .homeTaskCommentsItem__container{
+        background-color: var(--secondary-blue);
+    }
+    .homeTaskFilter__select{
+        .ant-select-selection-item{
+            color:white !important;
+        }
+    }
+    .homeTasks_subject{
+        background-color: var(--primary-dark);
+        box-shadow: 0px 1px 15px 0px #D4D4D41A;
+        color:white;
+    }
+    .homeTasks_subject:hover{
+        color:var(--primary-orange);
+    }
+    .homeTasks_subject:active{
+        background: linear-gradient(0deg, #0B1D26, #0B1D26),
+        linear-gradient(0deg, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0.2));
+    }
+    .homeTaskSubjects_title{
+        color:white;
+    }
+    .homeTasks_subject.inactive{
+        color:#797979;
+        background-color: var(--secondary-blue);
+        box-shadow: none;
+    }
+    .homeTasks_subject.inactive:hover{
+        color:#797979;
+    }
+}
+.light{
+    .homeTaskMain__container{
+        background-image: url('../../assets/images/signInBackgroundLight.png');
+    }
+    .homeTaskTitle{ 
+        color:black;
+    }
+    .homeTaskFilter__name{
+        color:black;
+    }
+    .fillterImg{
+        stroke: black;
+    }
+    .homeTaskItem__text{
+        color:black;
+    }
+    .homeTaskItem__date{
+        color:black;
+    }
+    .homeTaskDeadline__title{
+        color:black;
+    }
+    .homeTaskDeadline__date{
+        color:black;
+    }
+    .homeTaskCommentsItemNoComment{
+        color:black;
+    }
+    .homeTaskCommentItem__text{
+        color:black;
+    }
+    .homeTaskItem{
+        background-color: transparent;
+    }
+    .homeTaskCommentsItem__container{
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.205);
+    }
+    .homeTaskItem{
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.205);
+    }
+    .homeTaskFilter__select{
+        .ant-select-selection-item{
+            color:black !important;
+        }
+    }
+    
+}
+.homeTaskFilter__container:hover{
+    cursor:pointer;
+    .fillterImg{
+        transition: 0.2s;
+        stroke: var(--primary-orange);
+    }
+}
+
+@media screen and (min-width:'1440px') {
+    .homeTaskItem__text{
+        max-width: 300px;
+    }
+    .homeTaskTasks__container{
+        padding: 0 5%;
+    }
+    .homeTaskCommentItem__text{
+        max-width: 420px;
+    }
+    .homeTaskSubjects_main{
+        padding: 0 5%;
+    }
+}
+@media screen and (min-width:'1600px') {
+    .homeTaskTasks__container{
+        padding: 0 200px;
+    }
+    .homeTasks_subject {
+        max-width: 344px;
+        width: 23%;
+    }
+    .homeTaskSubjects_title{
+        margin: 0;
+    }
+    .homeTaskSubjects_main{
+        padding: 0 10.7%;
+    }
+    .homeTaskItem{
+        // width: 573px;
+        width: 40%;
+
+    }
+    .homeTaskCommentsItem__container{
+        width: 573px;
+    }
+    // .homeTaskFilters__container{
+    //     margin-left: -11px;
+    // }
+}

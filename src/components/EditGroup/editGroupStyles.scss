@@ -1,0 +1,42 @@
+.editGroupMain_container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 191px 5% 100px 5%;
+    font-family: Montserrat;
+}
+
+@media screen and (min-width:1441px) {
+	.editGroupMain_container{
+		padding: 191px 221px 0 221px;
+	}
+}
+
+.editGroupSelect__container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.editGroupHeader{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.success_message{
+    background-color: var(--primary-orange) !important;
+}
+.editGroupMain_container.dark{
+    .select_label{
+        color:white;
+    }
+    .createUserTitle{
+        color:white;
+    }
+    .editGroupHeader{
+        color: white;
+    }
+}

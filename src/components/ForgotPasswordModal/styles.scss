@@ -1,0 +1,59 @@
+.forgotPassword_header{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-family: Montserrat;
+}
+// .forgotPassword_modal{
+//     .ant-modal{
+//         transform: translate(0, -50%) !important;  
+//         top:50% !important;
+//     }
+// }
+@media screen and (min-width:'1440px') {
+    .forgotPassword_modal{
+        .ant-modal{
+            width: 43.5% !important;
+        } 
+    }
+}
+@media screen and (max-width:'1440px') {
+    .forgotPassword_modal{
+        .ant-modal{
+            width: 58.5% !important;
+        }
+    }
+}
+@media screen and (max-width:'1200px') {
+    .forgotPassword_modal{
+        .ant-modal{
+            width: 80% !important;
+        }
+    }
+}
+.forgotPassword_form{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.forgotPassword_input_container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.forgotPassword_subheader{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+.forgotPassword_description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color:var(--primary-gray);
+}

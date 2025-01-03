@@ -1,0 +1,88 @@
+.userPopup_container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 8px;
+    font-family: Montserrat;
+    gap:20px;
+}
+.userInfoPopup_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.userPopupSignOut_button{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.userFullName{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.userEmail{
+    font-family: Alegreya Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.userRole{
+    font-family: Alegreya Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.userInfoPopupLinks_header{
+    font-family: Alegreya Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.userInfoPopupLinks_container{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 20px;
+}
+.dark{
+    &.userPopup_container{
+        background-color: var(--primary-dark);
+    }
+    .userPopupSignOut_button{
+        color:white;
+        background-color: transparent;
+        outline: none;
+        border: none;
+
+    }
+    .userPopupSignOut_button:hover{
+        color:var(--primary-orange);
+    }
+    .userFullName{
+        color:white;
+    }
+    .userEmail{
+        color:white;
+    }
+    .userRole{
+        color:white;
+    }
+    .userInfoPopupLinks_header{
+        color:var(--primary-gray);
+    }
+}

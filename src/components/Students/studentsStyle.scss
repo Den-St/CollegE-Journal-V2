@@ -1,0 +1,201 @@
+.main__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    gap:40px;
+    font-family: Montserrat;
+    background-image: url('../../assets/images/signInBackground.png');
+}
+
+.studentTitle__container{
+    width: 56%;
+    // padding: 0 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+
+
+.studentTitle{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.8px;
+}
+
+.studentFillters__container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.studentList__container {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    width: 100%;
+}
+
+.studentItems__container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 30px;
+    flex-direction: column;
+    // height: 1000px;
+    // justify-content: center;
+}
+
+.student__container {
+    width: 520px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.student__info {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    gap: 23px;
+    font-family: Montserrat;
+    max-width: 67%;
+}
+
+.studentName {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.studentButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    max-width: 172px;
+    width:23%;
+    height: 40px;
+    border-radius: 10px 5px 10px 5px;
+    text-align: center;
+    font-family: Alegreya Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.2s linear;
+}
+.studentList__avatar{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 10px 5px;
+}
+
+.dark{
+    .studentTitle{
+        color: white;
+    }
+    .fillter_select{
+        color: white;
+    }
+    .fillterImg {
+        stroke: var(--primary-gray);
+    }
+    .student__container{
+        background:var(--secondary-blue);
+    }
+    .student__info{
+        color: white;
+    }
+    .studentButton{
+        background:var(--secondary-blue);
+        box-shadow: 0px 1px 10px 0px rgba(212, 212, 212, 0.10);
+        color:#FFF;
+    }
+    .studentButton:hover{
+        background: var(--primary-dark);
+    }
+    .studentButton:active{
+        color: var(--primary-orange);
+        background: var(--primary-dark);
+    }
+    .main__container{
+        background-color: var(--primary-dark);
+        background-image: url('./../../assets/images/signInBackground.png');
+    }
+    .studentFillters__container:hover{
+        cursor: pointer;
+        transition: 0.2s;
+        .fillterImg{
+            stroke:var(--primary-orange);
+        }
+    }
+}
+.light{
+    .studentTitle{
+        color: black;
+    }
+    .fillter_select{
+        color: #797979;
+    }
+    .fillterImg {
+        stroke: #797979;
+    }
+    .student__container{
+        box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.10);
+        background:white;
+    }
+    .student__info{
+        color: var(--primary-dark);
+    }
+    .studentButton{
+        background:white;
+        box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.10);
+        color:var(--primary-dark);
+    }
+    .studentButton:hover{
+        background: var(--primary-orange);
+    }
+    .main__container{
+        background-color: white;
+        background-image: url('./../../assets/images/signInBackgroundLight.png');
+    }
+    .studentFillters__container:hover{
+        cursor: pointer;
+        transition: 0.2s;
+        .fillterImg{
+            stroke:var(--primary-orange);
+        }
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .studentTitle__container{
+        width: 76.5%;
+    }
+    .studentList__container{
+        width: 90%;
+    }
+    .student__container{
+        width: 48%;
+        max-width: 720px;
+    }
+    // .fillter_container{
+    //     margin-left: -11px;
+    // }
+}
+@media screen and (max-width:1440px) {
+    .studentList__container{
+        // width: 85%;
+    }
+    .studentTitle__container{
+        width: 75%;
+    }
+}

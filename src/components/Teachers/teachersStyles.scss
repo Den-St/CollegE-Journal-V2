@@ -1,0 +1,122 @@
+.teachersMain_container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 191px 11% 0;
+    font-family: Montserrat;
+}
+@media screen and (min-width:1441px) {
+    .teachersMain_container{
+        padding: 191px 221px 0 221px;
+    }
+}
+.teachersHeader{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+}
+.teachersHeader_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teachersHeaderLeft_container{
+    display: flex;
+    gap:60px;
+    align-items: center;
+}
+.teachersHeaderRight_container{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.teachersSections_container{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+.teacherSectionItem_container{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.teacherSection_header{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+.teachers_container{
+    display: flex;
+    gap:35px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.teacherItem_container{
+    padding: 10px;
+    display: flex;
+    gap:10px;
+    border-radius: 10px 5px;
+    width: 23%;
+    min-width: 340px;
+    max-width: 500px;
+    align-items: center;
+}
+@media screen and (max-width:1620px) {
+    .teacherItem_container{
+        width: 31%;
+        max-width: unset;
+    }
+}
+.teacherAvatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px 5px;
+    object-fit: cover;
+}
+.teacherItemText_container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.teacherItem_name{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+.teacherItem_role{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+}
+.teachersGoToGroups_link{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+.dark{
+    .teachersHeader,
+    .teacherItem_name,
+    .teacherSection_header
+    {
+        color:white;
+    }
+    .teacherItem_role{
+        color:var(--primary-gray)
+    }
+    .teacherItem_container{
+        background-color: var(--primary-dark);
+        box-shadow: 0px 1px 15px 0px #D4D4D41A;
+    }
+    .teachersGoToGroups_link{
+        color: var(--primary-gray);
+    }
+}

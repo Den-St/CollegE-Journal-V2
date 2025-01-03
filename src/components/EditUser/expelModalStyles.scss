@@ -1,0 +1,11 @@
+.expelModalContainer{
+    background-color: var(--primary-dark);
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    border-radius: 10px, 5px, 10px, 5px;
+}
+.expelStudentModal .ant-modal{
+    width: 60% !important;
+}

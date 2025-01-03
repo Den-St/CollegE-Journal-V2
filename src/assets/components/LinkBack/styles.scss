@@ -1,0 +1,39 @@
+.linkBackContainer{
+    display: flex;
+    align-items: center;
+    gap:31px;
+    svg{
+        fill:var(--primary-gray);
+    }
+    transition: 0.2s;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+.linkBackTitle{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color:var(--primary-gray);
+    transition: 0.2s;
+}
+
+@media screen and (width < 780px) {
+    .linkBackContainer{
+        margin-left: 0;
+    }
+}
+
+.linkBackContainer:hover{
+    .linkBackTitle{
+        color:var(--primary-orange);
+    }
+    svg{
+        fill:var(--primary-orange);
+    }
+}

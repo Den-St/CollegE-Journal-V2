@@ -1,0 +1,283 @@
+.createHomeTaskMain__container{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 191px 0 0 10%;
+    font-family: Montserrat;
+    background-image: url('../../assets/images/signInBackground.png');
+}
+@media screen and (min-width:1441px) {
+    .createHomeTaskMain__container{
+        padding: 191px 221px 0 221px;
+    }
+}
+.createHomeTask__title{
+    font-size: 28px;
+    font-weight: 500;
+}
+.createHomeTaskInputs__container{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.createHomeTaskInputItemHeader__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 55%;
+    max-width: 640px;
+    font-size: 18px;
+}
+.createHomeTaskInputItemDate__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 40%;
+    position: relative;
+}
+.createHomeTaskInputItem__title{
+    font-size: 20px;
+    font-weight: 400;
+}
+.createHomeTaskInputItem{
+    width: 100%;
+    height: 63px;
+    padding-left:28px;
+    border-radius: 10px 5px 10px 5px;
+}
+.createHomeTaskDate{
+    width: 100%;
+    height: 63px;
+    padding: 0 28px;
+    border-radius: 10px 5px 10px 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 440px;
+}
+.createHomeTaskOpenDatePicker__button{
+    background-color: transparent;
+}
+.createHomeTaskInputItemEditor__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 85.3%;
+    font-size: 18px;
+}
+// .ant-picker{
+//     visibility:hidden;
+//     height: 0px;
+//     width: 0px;
+// }
+
+// .ant-picker-dropdown .css-dev-only-do-not-override-pr0fja .ant-picker-dropdown-placement-topRight{
+//     position: absolute;
+//     top: 50px;
+//     right: 50px;
+//     z-index: 100;
+// }
+// .ant-picker-dropdown{
+//     inset: 406px auto auto 46% !important;
+// }
+
+
+.quill{
+    background-color: var(--secondary-blue);
+    border:none;
+    max-width: 1120px;
+}
+.ql-editor{
+    height: 414px !important;
+}
+.ql-snow .ql-picker{
+    color:white !important;
+}
+.ql-picker-item{
+    color:black !important;
+}
+.ql-stroke{
+    stroke:white !important; 
+}
+
+.ql-snow{
+    border: none !important;
+}
+.ql-editor{
+    color:white;    
+    font-size: 16px;
+}
+.ql-blank::before{
+    color:white !important;
+    font-style:normal !important;
+}
+.ql-editor::placeholder{
+    color:white;
+}
+
+.createHomeTaskButtons__container{
+    display: flex;
+    gap:30px;
+}
+.createHomeTaskButtons__button{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 10px 5px 10px 5px;
+}
+.ant-picker-dropdown .ant-picker-panel-container{
+    background-color: #123547 ;
+}
+// .ant-picker-dropdown .ant-picker-header{
+//     color:white;
+// }
+// .ant-picker-header-next-btn{
+//     color:white;
+// }
+// .ant-picker-header-prev-btn{
+//     color:white;
+
+// }
+.dark{
+    .createHomeTask__title{
+        color:white;
+    }
+    .createHomeTaskInputItem__title{
+        color:white;
+    }
+    .createHomeTaskInputItem{
+        color:var(--primary-gray);
+        background-color: var(--secondary-blue);
+    }
+    .createHomeTaskDate{
+        color:var(--primary-gray);
+        background-color: var(--secondary-blue);  
+    }
+    .createHomeTaskInputItem::placeholder{
+        color:var(--primary-gray);
+    }
+    .createHomeTaskButtons__button{
+        background-color: var(--secondary-blue);  
+        color:white;
+    }
+    .quill{
+        background-color: var(--secondary-blue);
+        border:none;
+    }
+    .ql-editor{
+        height: 414px !important;
+    }
+    .ql-snow .ql-picker{
+        color:white !important;
+    }
+    .ql-picker-item{
+        color:black !important;
+    }
+    .ql-stroke{
+        stroke:white !important; 
+    }
+    
+    .ql-snow{
+        border: none !important;
+    }
+    .ql-editor{
+        color:white;    
+        font-size: 16px;
+    }
+    .ql-blank::before{
+        color:white !important;
+        font-style:normal !important;
+    }
+    .ql-editor::placeholder{
+        color:white;
+    }
+    
+    .createHomeTaskButtons__button:hover{
+        color:var(--primary-orange);
+        transition: 0.2s;
+    }
+}
+.light{
+    .createHomeTask__title{
+        color:black;
+    }
+    .createHomeTaskInputItem__title{
+        color:var(--primary-dark);
+    }
+    .createHomeTaskInputItem{
+        color:var(--primary-gray);
+        background-color: white;
+        box-shadow: 0 0 15px 0 rgb(152, 152, 152);
+    }
+    .createHomeTaskDate{
+        color:var(--primary-gray);
+        background-color: white; 
+        box-shadow: 0 0 15px 0 rgb(152, 152, 152);
+
+    }
+    .createHomeTaskInputItem::placeholder{
+        color:var(--primary-gray);
+    }
+    .createHomeTaskButtons__button{
+        background-color: white;  
+        color:black;
+    }
+    .quill{
+        background-color: white;
+        border:none;
+        max-width: 1120px;
+    }
+    .ql-editor{
+        height: 414px !important;
+    }
+    .ql-snow .ql-picker{
+        color:black !important;
+    }
+    .ql-picker-item{
+        color:black !important;
+    }
+    .ql-stroke{
+        stroke:black !important; 
+    }
+    
+    .ql-snow{
+        border: none !important;
+    }
+    .ql-editor{
+        color:black;    
+        font-size: 16px;
+    }
+    .ql-blank::before{
+        color:black !important;
+        font-style:normal !important;
+    }
+    .ql-editor::placeholder{
+        color:black;
+    }
+    .quill{
+        border-radius: 10px 5px 10px 5px;
+        box-shadow: 0 0 15px 0 rgb(152, 152, 152);
+    }
+    .ant-picker-dropdown .ant-picker-panel-container{
+        background-color: #ffffff !important;
+    }
+    .createHomeTaskButtons__button:hover{
+        color:var(--primary-orange);
+        transition: 0.2s;
+    }
+}
+
+// @media screen and (min-width:'1440px') {
+//     .ant-picker-dropdown{
+//         inset: 406px auto auto 58% !important;
+//     }
+// }
+@media screen and (min-width:'2200px') {
+    // .ant-picker-dropdown{
+    //     inset: 406px auto auto 46% !important;
+    // }
+    .quill{
+        max-width: unset;
+    }
+}

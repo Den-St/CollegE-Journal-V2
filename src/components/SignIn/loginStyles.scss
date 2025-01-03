@@ -1,0 +1,256 @@
+.signIn__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 229px;
+    font-family: Montserrat;
+    color:white;
+    position:relative;
+    background: url('../../assets/images/signInBackground.png');
+    flex-direction: column;
+}
+
+.signIn__wrapper{
+    width: 474px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+}
+@media screen and (min-width:2200px) {
+    .signIn__wrapper{
+        width: 574px;
+    }
+    .signIn__form {
+        gap:80px;
+    }
+    .signInWithGoogle__button{
+        margin-bottom: 40px;
+    }
+}
+.signIn__header{
+    font-weight: 500;
+    font-size: 28px;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.signIn__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:60px;
+}
+
+.signInInput__container{
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.email__input{
+    background-color: transparent;
+    padding: 5px 30px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:white;
+    width:100%;
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-background-clip: black !important;
+    }
+    ::placeholder{
+        color:white;
+    }
+}
+ 
+.password__input{
+    background-color: transparent;
+    padding: 5px 30px;
+    font-weight: 400;
+    font-size: 18px;
+    width:90%;
+    letter-spacing: 2px;
+    color:white;
+   
+}
+
+.passwordEye__button{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.signInSettings__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: -30px;
+}
+
+.rememberMe__container{
+    display: flex;
+    gap:24px;
+    align-items: center;
+}
+.rememberMe__title{
+    color:#797979;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Alegreya Sans;
+}
+.forgotPassword{
+    color:var(--primary-yellow,var(--primary-orange));
+    background-color: transparent;
+    cursor: pointer;
+    //styleName: H/H4;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+letter-spacing: 0.1em;
+text-align: center;
+
+}
+.signIn__button{
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-yellow,var(--primary-orange));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.signInWithGoogle__button{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 15px var(--primary-dark)a7;
+}
+
+.signInWithGoogle__icon{
+    position: absolute;
+    top:18px;
+    left: 30px;
+    font-weight: 500;
+}
+.noAccount__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.noAccount__text{
+    text-align: center;
+    width: 413px;
+}
+.rememberMe__checkbox{
+    width: unset;
+}
+
+.cornerSvg{
+    position: absolute;
+    top:20px;
+}
+.signIn_errorMessage{
+    font-family: Alegreya Sans;
+    font-size: 16px;
+    line-height: 19px;
+
+    width: 100%;
+    padding: 6px 30px;
+    border-radius: 10px 5px;
+    font-weight: 400;
+}
+.googleAuthLoader_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #a6accb1e;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.dark{
+    .signIn_errorMessage{
+        background-color: #ED343466;
+        color: white;
+    }
+    .signIn__button:hover{
+        box-shadow: 0px 0px 10px 0px #D4D4D41A;
+    }
+    .signIn__button:active{
+        background: linear-gradient(0deg, rgba(11, 29, 38, 0.2), rgba(11, 29, 38, 0.2)),
+linear-gradient(0deg, #EFB42D, #EFB42D);
+    }
+}
+.light{
+    .signIn__container{
+        background: url('../../assets/images/signInBackgroundLight.png');
+    }
+    .email__input{
+        ::placeholder{
+            color:var(--primary-black,var(--primary-dark));
+        }
+        color:var(--primary-black,var(--primary-dark));
+    }
+    .password__input{
+        ::placeholder{
+            color:var(--primary-black,var(--primary-dark));
+        }
+        color:var(--primary-black,var(--primary-dark));
+    }
+    .signInInput__container{
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+    .signIn__header{
+        color:black;
+    }
+    .noAccount__text{
+        color:var(--primary-dark);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .signIn__container{
+        padding-top: 150px;
+    }
+    .signIn__wrapper{
+        width: 90%;
+    }
+    .noAccount__text{
+        width: 90%;
+    }
+}

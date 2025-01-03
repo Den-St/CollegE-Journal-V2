@@ -1,0 +1,1 @@
+export const originUrl = 'https://collegejournal.ovh/';

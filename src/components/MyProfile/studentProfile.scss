@@ -1,0 +1,466 @@
+.studentProfile__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 191px 7% 0;
+    justify-content: center;
+    gap:60px;
+    font-family: Montserrat;
+    background-image: url('../../assets/images/signInBackground.png');
+}
+@media screen and (min-width:1441px) {
+    .studentProfile__container{
+        padding: 233px 221px 0 221px;
+    }
+  
+}
+.avatarEdit_container{
+    position: relative;
+    transition: 0.2s;
+}
+.profileAvatar_edit{
+    position: absolute;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.avatarEdit{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--primary-dark);
+    svg{
+        opacity: 0;
+    }
+}
+.avatarEdit_container:hover{
+    .profileAvatar_edit{
+        opacity: 0;
+    }
+    .avatarEdit{
+        opacity: 1;
+        svg{
+            opacity: 1;
+        }
+    }
+}
+.profileAvatar_edit:hover{
+    opacity: 0;
+}
+
+.studentProfileMain__container{
+    display: flex;
+    // align-items: flex-start;
+    gap:130px;
+    justify-content: space-between;
+}
+
+.studentProfileLeft__container{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+
+.studentProfileInfo__container{
+    display: flex;
+    gap:30px;
+    align-items: flex-start;
+
+}
+
+.studentProfile_img{
+    width: 81px;
+    height: 81px;
+    object-fit: cover;
+    border-radius:50%;
+}
+@media screen and (min-width:1441px) {
+    .studentProfile_img,.avatarEdit{
+        width: 121px;
+        height: 121px;
+    }
+}
+@media screen and (max-width:1440px) {
+    .studentProfile_img,.avatarEdit{
+        width: 81px;
+        height: 81px;
+    }
+}
+.studentProfileTextInfo__container{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    p{
+        width: fit-content;
+    }
+}
+
+.studentProfile__name{
+    font-weight: 500;
+    font-size: 28px;
+    align-items: center;
+    font-family: Montserrat;
+}
+.studentProfile__name_container{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.editProfileSvg{
+    transition: 0.2s;
+    cursor: pointer;
+    fill: var(--primary-gray);
+}
+.editProfileSvg:hover{
+    fill: var(--primary-orange) !important;
+}
+.editUserProfile_button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.editUserProfile_button:focus{
+    svg{
+        fill:#797979;
+    }
+}
+.studentProfile__email{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.studentProfile__bio{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    width: 50%;
+}
+.studentProfile__group{
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 15px;
+    line-height: 24px;
+    width: fit-content;
+    transition: 0.2s;
+    color:var(--primary-gray);
+}
+.studentProfile__group:hover{
+    color: var(--primary-orange);
+}
+.studentProfile__group:active{
+    color: var(--primary-orange);
+    opacity: 0.9;
+}
+
+.studentProfileTabs__container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 111px;
+    gap:60px;
+    align-items: flex-start;
+}
+
+.studentProfileTab__button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    transition: 0.2s;
+    //styleName: H/H2;
+font-family: Montserrat;
+font-size: 28px;
+font-weight: 500;
+line-height: 34.13px;
+letter-spacing: 0.1em;
+text-align: left;
+
+}
+.diagonalArrowSvg{
+    transition: 0.2s;
+}
+
+.studentProfileStatistic__container{
+    padding: 25px 97px 40px 81px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.studentProfileStatistic__header{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+}
+.studentProfileStatistic__value{
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 34px;
+}
+.na{
+    color:#ED3434;
+}
+.good{
+    color:#2DEF40;
+}
+.med{
+    color:var(--primary-orange);
+}
+
+@media screen and (min-width:'1440px'){
+    .studentProfileMain__container{
+        // width: 1189px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .studentProfileTextInfo__container{
+
+    }
+}
+
+.profile_detailedInfo_section{
+    background: #102936;
+    display: flex;
+    padding: 30px 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (width < '720px') {
+    .profile_detailedInfo_section{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+.profile_detailedInfo_dir_container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    // justify-content: space-between;
+    column-gap:60px;  
+}
+.profile_detailedInfo_dir_container_important{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    // justify-content: space-between;
+    column-gap:60px;  
+    width: 265px;
+}
+.profile_detailedInfo_dir_header{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    width: 100%;
+}
+.studentProfileTab__title{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    width: 97%;
+    text-align: start;
+    //styleName: H/H2;
+font-family: Montserrat;
+font-size: 28px;
+font-weight: 500;
+line-height: 34.13px;
+letter-spacing: 0.1em;
+text-align: left;
+
+}
+.profile_detailedInfo_itemContainer{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+@media screen and (min-width:1441px) {
+    .profile_detailedInfo_itemContainer{
+        min-width: 200px;
+    }
+}
+.profile_detailedInfo_item_header{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+}
+.profile_detailedInfo_item_text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+}
+.onEditing{
+    svg{
+        fill:var(--primary-orange);
+    }
+}
+.tryEditProfileModal{
+    .ant-modal-body{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+.dark{
+    .profile_detailedInfo_item_text{
+        color: white;
+    }
+    .profile_detailedInfo_item_header{
+        color: #D0D0D0;
+    }
+    .profile_detailedInfo_dir_header{
+        color:white;
+    }
+    .profile_detailedInfo_section{
+        background: #102936;
+    }
+    .studentProfile__name{
+        color:white;
+    }
+    .studentProfile__email{
+        color:var(--primary-gray);
+    }
+
+    .studentProfileTab__button{
+        color:var(--primary-gray);;
+        .diagonalArrowSvg {
+            fill:white;
+        }
+    }
+    .studentProfileTab__button.picked{
+        color:var(--primary-orange);
+        .diagonalArrowSvg{
+            fill:var(--primary-orange);
+        }
+    }
+    .studentProfileStatistic__header{
+        color:white;
+    }
+    .studentProfileStatistic__container{
+        background-color: rgb(27,40,48,0.85);
+    }
+    .studentProfileTab__title{
+        color:white;
+    }
+    .studentProfileTab__button:hover{
+        color:var(--primary-orange);
+        .diagonalArrowSvg{
+            fill:orange;
+        }
+    }
+    .medium{
+        color:var(--primary-orange);
+    }
+    .studentProfile__bio{
+        color: #D0D0D0;
+    }
+}
+.light{
+    .studentProfileTab__button{
+        color:black;
+        .diagonalArrowSvg{
+            fill:black;
+        }
+    }
+    .studentProfileTab__button.picked{
+        color:var(--primary-orange);
+        .diagonalArrowSvg{
+            fill:var(--primary-orange);
+        }
+    }
+    .studentProfileTab__button:hover{
+        color:var(--primary-orange);
+        .diagonalArrowSvg{
+            fill:var(--primary-orange);
+        }
+    }
+}
+
+@media screen and (min-width:2200px) {
+    .studentProfile_img{
+        width: 120px;
+        height: 120px;
+    }
+    .studentProfileStatistic__container{
+        padding: 25px 105px 25px 151px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .studentProfile__name_container{
+        gap:10px;
+    }
+}
+@media screen and (min-width:1441px){
+   
+    // .studentProfileLeft__container{
+    //     width: 50%;
+    // }
+    .studentProfileTabs__container{
+        margin-left: 151px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .studentProfileMain__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .studentProfileTabs__container{
+        margin-left: 0;
+    }
+    .studentProfileInfo__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .studentProfileTextInfo__container{
+        align-items: center;
+    }
+    .studentProfile__container{
+        padding-top: 80px;
+    }
+    .studentProfile__name{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+    }
+    .studentProfileLeft__container{
+        width: 100%;
+    }
+    .studentProfile__email{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+    }
+    .studentProfile__group{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+    }
+    .studentProfileStatistic__container{
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .lessonsSchedule__container{
+        row-gap: 40px;
+    }
+}

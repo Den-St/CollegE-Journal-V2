@@ -1,0 +1,117 @@
+.ant-select-selection-placeholder{
+	// font-size: 28px !important;
+	// font-weight: 500 !important;
+	// line-height: 34px !important;
+	// letter-spacing: 0.1em !important;
+	// //styleName: H/H4;
+	font-family: Montserrat !important;
+	font-size: 18px !important;
+	font-weight: 400 !important;
+	line-height: 22px !important;
+	letter-spacing: 0.1em !important;
+}
+
+.journalSubject_fillter_container{
+	.fillter_select{
+		max-width: 400px;
+		// overflow: hidden;
+	}
+}
+
+.fillter_container{
+	align-items: center;
+	// width: calc(fit-content + 100px) !important;
+	.ant-select-arrow{
+		display: none;
+	}
+	svg{
+		width: 20px;
+	}
+	.fillter_select{
+		display: flex !important;
+		align-items: center !important;
+		// width: fit-content !important;
+	}
+}
+
+.fillterPlaceholder_container{
+	display:flex;
+	gap:30px;
+	align-items:center;
+}
+.fillterItem_container{
+	display: flex;
+	gap:30px;
+}
+.fillter_placeholder,
+.fillter_container .ant-select-selection-item {
+	font-family: Montserrat;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 34px;
+	letter-spacing: 0.1em;
+	display: flex;
+	gap:30px;
+	align-items: center;
+	color:white;
+}
+.select_container{
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+.select_label{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+	width: 100%;
+	overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+	font-family: Montserrat;
+}
+
+
+.ant-select-clear{
+	// position: static !important;
+	// width: 20px !important;
+	// height: 20px !important;
+	margin-top: -9px !important;
+	// top:calc(50% - 3px) !important;
+	// right: -10px !important;
+	background-color: transparent !important;
+	opacity: unset !important;
+	.anticon-close-circle{
+		font-size: 20px;
+		color:white !important;
+	}
+}
+.ant-select .ant-select-clear{
+	inset-inline-end:-2px;
+}
+@media screen and (max-width:780px) {
+	.ant-select .ant-select-clear{
+		inset-inline-end:-11px;
+	}
+}
+.ant-select-selector{
+	border: none !important;
+	box-shadow: none !important;
+	padding: 0 11px 0 0 !important;
+}
+.ant-select-selection-item{
+	padding-left: 0 !important;
+}
+.ant-select-focused{
+	border: none;
+}
+.ant-select-selection-item{
+	font-size: 18px;
+	font-family: Montserrat;
+}
+.ant-carousel .slick-dots-bottom{
+	bottom: -20px !important;
+	z-index: 1 !important;
+}

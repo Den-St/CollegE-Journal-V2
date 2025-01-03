@@ -1,0 +1,263 @@
+.createStudyMaterialsMain__container{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 191px 11% 0 11%;
+    width: 100%;
+    font-family: Montserrat;
+    background-image: url('../../assets/images/signInBackground.png');
+}
+@media screen and (min-width:1441px) {
+	.createStudyMaterialsMain__container{
+		padding: 191px 221px 0 221px;
+	}
+}
+
+.createStudyMaterialsTitle{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.createStudyMaterialsInputs__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:40px;
+}
+.createStudyMaterialsInput__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.createStudyMaterialsInput__title{
+    font-size: 20px;
+    font-weight: 400;
+}
+.createStudyMaterialsHeader__input{
+    width: 100%;
+    height: 63px;
+    padding-left:28px;
+    border-radius: 10px 5px 10px 5px;
+}
+.createStudyMaterialsSelect__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 48%;
+}
+.createStudyMaterialsSelects__container{
+    display: flex;
+    gap:30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.select_wrapper{
+    width: 100%;
+    height: 63px;
+    padding:0 28px;
+    border-radius: 10px 5px 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ant-select{
+    width: 100%;
+}
+.quill{
+    border-radius: 10px 5px 10px 5px;
+}
+
+.sendHomeTaskHomeTaskAttachFileInput__container{
+    border-radius: 10px 5px;
+}
+.sendHomeTaskHomeTaskAttachedLinks__container{
+    border-radius: 10px 5px;
+}
+.sendHomeTaskHomeTaskAttachedFiles__container{
+    border-radius: 10px 5px;
+}
+.sendHomeTaskHomeTaskAttachFileInput__styled{
+    border-radius: 10px 5px;
+}
+.sendHomeTaskHomeTaskAttachedLinkItem{
+    border-radius: 10px 5px;
+}
+.quill{
+    max-width: 1120px;
+}
+.dark{
+    .createStudyMaterialsHeader__input{
+        background-color: var(--secondary-blue);
+        color:white;
+    }
+    .select_wrapper{
+        background-color: var(--secondary-blue);
+        color:white;
+    }
+    .createStudyMaterialsTitle{
+        color:white;
+    }
+    .createStudyMaterialsInput__title{
+        color:white;
+    }
+    .sendHomeTaskHomeTaskAttachedFileItem{
+        background-color: var(--secondary-blue);
+        color: white;
+
+    }
+    .sendHomeTaskHomeTaskAttachedLinkItem{
+        background-color: var(--secondary-blue);
+        color: white;
+    }
+    .sendHomeTaskHomeTaskAttachedFileItemFormat{
+        color:var(--primary-gray);
+    }
+    .sendHomeTaskHomeTaskAttachedLinkItemUrl{
+        color:var(--primary-gray);
+    }
+    .sendHomeTaskHomeTaskAttachFileInput__styled{
+        background-color: var(--secondary-blue);
+        color:white;
+    }
+    .createStudyMaterialsMain__container.dark .createStudyMaterialsHeader__input{
+        caret-color: white;
+    }
+    .quill{
+        background-color: var(--secondary-blue);
+        border:none;
+        max-width: 1120px;
+    }
+    .ql-editor{
+        height: 214px !important;
+    }
+    .ql-snow .ql-picker{
+        color:white !important;
+    }
+    .ql-picker-item{
+        color:black !important;
+    }
+    .ql-stroke{
+        stroke:white !important; 
+    }
+    
+    .ql-snow{
+        border: none !important;
+    }
+    .ql-editor{
+        color:white;    
+        font-size: 16px;
+    }
+    .ql-blank::before{
+        color:white !important;
+        font-style:normal !important;
+    }
+    .ql-editor::placeholder{
+        color:white;
+    }
+    .ant-select-selector{
+        background-color: var(--secondary-blue) !important;
+        border: none;
+    }
+    .sendHomeTaskHomeTaskAttachFileInput__container:hover{
+        .sendHomeTaskHomeTaskAttachFileInput__styled{
+            color:var(--primary-orange);
+            transition: 0.2s;
+
+        }
+        input{
+            cursor: pointer;
+        }
+    }
+}
+.light{
+    .sendHomeTaskHomeTaskAttachedFileItemFormat{
+        color:#797979;
+    }
+    .sendHomeTaskHomeTaskAttachedLinkItemUrl{
+        color:#797979;
+    }
+    .createStudyMaterialsHeader__input{
+        background-color: white;
+        color:black;
+    }
+    .select_wrapper{
+        background-color: white;
+        color:black;
+    }
+    .createStudyMaterialsMain__container.dark .createStudyMaterialsHeader__input{
+        caret-color: black;
+    }
+    .quill{
+        background-color: white;
+        border:none;
+        max-width: 1120px;
+    }
+    .ql-editor{
+        height: 414px !important;
+    }
+    .ql-snow .ql-picker{
+        color:black !important;
+    }
+    .ql-picker-item{
+        color:black !important;
+    }
+    .ql-stroke{
+        stroke:black !important; 
+    }
+    
+    .ql-snow{
+        border: none !important;
+    }
+    .ql-editor{
+        color:black;    
+        font-size: 16px;
+    }
+    .ql-blank::before{
+        color:black !important;
+        font-style:normal !important;
+    }
+    .ql-editor::placeholder{
+        color:black;
+    }
+    .quill{
+        border-radius: 10px;
+        box-shadow: 0 0 15px 0 rgb(152, 152, 152);
+    }
+    .sendHomeTaskHomeTaskAttachFileInput__container:hover{
+        .sendHomeTaskHomeTaskAttachFileInput__styled{
+            color:var(--primary-orange);
+            transition: 0.2s;
+
+        }
+        input{
+            cursor: pointer;
+        }
+    }
+    .createStudyMaterialsHeader__input{
+        box-shadow: 0px 1px 15px 0px #0000001A;
+    }
+    .select_wrapper{
+        box-shadow: 0px 1px 15px 0px #0000001A;
+
+    }
+    .sendHomeTaskHomeTaskAttachedFiles__container{
+        box-shadow: 0px 1px 15px 0px #0000001A;
+    }
+    .sendHomeTaskHomeTaskAttachedLinks__container{
+        box-shadow: 0px 1px 15px 0px #0000001A;
+    }
+    .sendHomeTaskHomeTaskAttachFileInput__container{
+        box-shadow: 0px 1px 15px 0px #0000001A;
+    }
+    .quill{
+        box-shadow: 0px 1px 15px 0px #9898984f !important;
+    }
+}
+
+@media screen and (min-width:2200px) {
+    .quill{
+        max-width: unset !important;
+    }
+}

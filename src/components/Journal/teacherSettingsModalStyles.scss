@@ -1,0 +1,42 @@
+.teacherSettingsModal .ant-modal{
+    width: 85% !important;
+    .ant-modal-content{
+        padding: 60px 70px 32px 70px !important;
+    }
+}
+.teacherSettingsModalCollapse{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .ant-collapse-header-text{
+        flex: unset !important;
+        margin-inline-end:0 !important;
+    }
+    .ant-collapse-item:hover{
+        .ant-collapse-arrow{
+
+            path{
+                stroke:var(--primary-orange) !important;
+                fill:var(--primary-orange) !important;
+            }
+        }
+        
+    }   
+    .ant-collapse-item-active{
+        h1{
+        color:var(--primary-orange) !important;
+        }
+        .ant-collapse-arrow{
+            path{
+                stroke:var(--primary-orange) !important;
+                fill:var(--primary-orange) !important;
+            }  
+        }
+    }
+}
+
+.teacherSettingsModal .ant-modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

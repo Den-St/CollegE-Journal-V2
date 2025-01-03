@@ -1,0 +1,229 @@
+.absenceTable_weekFillter{
+	display:flex;
+	gap:20px;
+	align-items:center;
+	button:not(.absenceTable_fillterArrowButton_double){
+		width: 9px;
+		height: 18px;
+		background-color: transparent;
+		svg{
+			width: 9px !important;
+			height: 18px !important;
+			fill: var(--primary-gray);
+		}
+		svg:hover{
+			fill: var(--primary-orange);
+		}
+	}
+    .absenceTable_fillterArrowButton_double{
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		svg{
+			width: 16px !important;
+			height: 15px !important;
+			fill: var(--primary-gray);
+		}
+		svg:hover{
+			fill: var(--primary-orange);
+		}
+	}
+    .disabled{
+        cursor:not-allowed;
+        svg:hover{
+			fill: var(--primary-gray);
+		}
+    }
+	p{
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24.38px;
+		letter-spacing: 0.1em;
+		text-align: left;
+		color: white;
+	}
+}
+
+.absenceTable_dayContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 152px;
+}
+.absenceTable_day{
+    width: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 5px;
+    background-color: var(--secondary-blue);
+    color:var(--primary-gray);
+    padding: 15px 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.absenceTable_dayNumberContainer{
+    display: flex;
+    gap: 10px;
+}
+.absenceTable_dayNumber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 70px;
+    border-radius: 10px 5px;
+    //styleName: H/H2;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34.13px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color:var(--primary-gray);
+    background-color: var(--secondary-blue);
+}
+.absenceTable_teacherSection{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.absenceTable_teachersSection_header{
+    width: 333px;
+    min-width: 333px;
+    min-height: 200px;
+    // margin-right: 47px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: var(--primary-gray);
+    background-color: var(--secondary-blue);
+    border-radius: 10px 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.absenceTable_teachersContainer{
+    display: flex;
+    gap:21px;
+    overflow-x: scroll;
+}
+.absenceTable_teacher{
+    min-height: 200px;
+    width: 24px;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+    transform:rotate(-180deg);
+    color: var(--primary-gray);
+    background-color: var(--secondary-blue);
+    border-radius: 10px 5px;
+    //styleName: H/H3;
+   //styleName: H/H4;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.absenceTable_dayValues_container{
+    display: flex;
+    width:152px;
+    gap:8px;
+    background: transparent;
+}
+
+.absenceTable_vetricalDivider{
+    width: 1px;
+    height:30px;
+    background-color: #797979;
+}
+.absenceTable_totalTop{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color:var(--primary-gray);
+    writing-mode: vertical-lr;
+    transform:rotate(-180deg);
+    background-color: var(--secondary-blue);
+    border-radius: 10px 5px;
+    // margin-left: 21px;
+}
+.absenceTable_studentContainer{
+    display: flex;
+    background-color: var(--primary-dark);
+
+}
+.absenceTable_studentContainer{
+    &.even{
+        background-color: var(--secondary-blue);
+    }
+}
+.absenceTable_teachersSubcontainer{
+    display: flex;
+    gap:8px;
+}
+
+.monthAttestationsTableSubject{
+    max-height: 300px;
+    height: 100%;
+    min-height: 165px;
+    width: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+    transform:rotate(-180deg);
+    color: var(--primary-gray);
+    background-color: var(--secondary-blue);
+    border-radius: 10px 5px;
+    //styleName: H/H3;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.monthAttestationsDate{
+    min-height: 94px;
+    width: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+    transform:rotate(-180deg);
+    color: var(--primary-gray);
+    background-color: var(--secondary-blue);
+    border-radius: 10px 5px;
+    //styleName: H/H3;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

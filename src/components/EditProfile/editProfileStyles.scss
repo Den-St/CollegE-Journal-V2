@@ -1,0 +1,255 @@
+.editProfileMain_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 191px 12%;
+    gap:50px;
+    font-family: Montserrat !important;
+    background-image: url('../../assets/images/signInBackground.png');
+}
+@media screen and (min-width:1441px) {
+	.editProfileMain_container{
+		padding: 191px 221px 0 221px;
+	}
+}
+.editProfile_header{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+    display: flex;
+    gap: 30px;
+}
+.editProfile_header_container{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.editProfile_section{
+    display: flex;
+    gap:80px;
+}
+.editProfileChangePhoto_container{
+    // width: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+.editProfile_form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 750px;
+}
+.editProfile_input{
+    width: 100%;
+}
+.editProfileModal_container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.editProfileModal{
+    width: 50% !important;
+}
+.editProfileModal_header{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    font-family: Montserrat !important;
+
+}
+.editProfileModal_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.editFormButtons_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.editProfileUserInfo{
+    gap:50px !important;
+}
+.editProfile_leaveButton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    svg{
+        transition: 0.2s;
+        fill:#D0D0D0;
+    }
+}
+.editProfile_leaveButton:hover{
+    svg{
+        fill:var(--primary-orange);
+    }
+}
+.questionMarkSvg{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    path{
+        transition: 0.6s;
+    }
+}
+.studentProfile_img_edit{
+    width: 110px !important;
+    height: 110px !important;
+}
+.editProfile_section_header{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+.uploadButton{
+    //styleName: H/H7;
+font-family: Alegreya Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.2px;
+text-align: center;
+width: 200px;
+}
+.tryEditProfileModal{
+    .ant-modal{
+        width: 48.5% !important;
+    }
+}
+.img-crop-modal{
+    .ant-modal-title{
+        //styleName: H/H2;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 34.13px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .ant-modal{
+        width: 700px !important;
+        height: 660px !important;
+    }
+    .img-crop-control{
+        button:hover{
+            color:var(--primary-orange);
+        }
+    }
+    .img-crop-control:first-child{
+        margin-top: 27px !important;
+    }
+    .img-crop-control:last-child{
+        margin-bottom: 15px !important;
+    }
+    .ant-slider-track{
+        background-color: var(--primary-orange);
+    }
+    .ant-slider-track:hover{
+        background-color: var(--primary-orange) !important;
+    }
+    .ant-slider-handle::after{
+        background-color: var(--secondary-blue);
+        box-shadow:0 0 0 2px var(--primary-orange);
+    }
+    .ant-modal-footer .ant-btn-default{
+        color: var(--primary-gray) !important;
+        border: none;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.94px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        width: 150px !important;
+        height: 42px;
+        border-radius: 10px 5px;
+        background-color: var(--secondary-blue) !important;
+    }
+    .ant-modal-footer .ant-btn-primary{
+        color: white !important;
+        border: none;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.94px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        width: 178px !important;
+        height: 42px;
+        border-radius: 10px 5px;
+        background-color: var(--primary-orange) !important;
+    }
+    .ant-modal-body .ant-btn{
+        color: var(--primary-gray) !important;
+        border: none;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.94px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        width: 150px !important;
+        height: 42px;
+        border-radius: 10px 5px;
+        background-color: var(--secondary-blue) !important;
+        bottom: 32px !important;
+        width: 218px !important;
+        height: 42px;
+    }
+    .ant-modal-footer .ant-btn-default:hover,.ant-modal-body .ant-btn:hover{
+        color: var(--primary-orange) !important;
+    }
+    .ant-modal-footer .ant-btn-default:active,.ant-modal-body .ant-btn:active{
+        color: var(--primary-orange) !important;
+        background: linear-gradient(0deg, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0.2)),
+        linear-gradient(0deg, #102936, #102936) !important;
+
+    }
+    .ant-modal-footer .ant-btn-default:disabled,.ant-modal-body .ant-btn:disabled{
+        opacity: 0.2 !important;
+    }
+    .ant-modal-footer .ant-btn-primary:active,.ant-modal-footer .ant-btn-primary:active{
+        background: linear-gradient(0deg, var(--Primary-Yellow, #EFB42D), var(--Primary-Yellow, #EFB42D)),
+        linear-gradient(0deg, rgba(11, 29, 38, 0.2), rgba(11, 29, 38, 0.2)) !important;
+    }
+    .ant-modal-footer .ant-btn-primary:disabled,.ant-modal-footer .ant-btn-primary:disabled{
+        opacity: 0.2 !important;
+    }
+    button:nth-child(7){
+        span{
+            color:white !important;
+        }
+    }
+}
+.dark{
+    .editProfile_header{
+        color:white;
+    }
+    .editProfile_section_header{
+        color:white;
+    }
+    .uploadButton{
+        background-color: var(--secondary-blue);
+        color:white;
+        border: none;
+    }
+    .uploadButton:hover{
+        color:var(--primary-orange) !important;
+    }
+    .questionMark_container.active,
+    .questionMark_container:hover{
+        .questionMarkSvg{
+            path{
+                fill:var(--primary-orange) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.ant-steps{
+	width: 95% !important;
+}
+.ant-steps-item-container{
+	display: flex;
+	align-items: center;
+}
+.ant-steps-item-icon{
+	background-color: var(--secondary-blue) !important;
+	border: none !important;
+	width: 60px !important;
+	height: 60px !important;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px !important;
+}
+.ant-steps-icon {
+	color: white !important;
+	font-size: 28px !important;
+	font-family: Montserrat !important;
+}
+.ant-steps-item-finish .ant-steps-icon{
+	color:var(--primary-orange) !important;
+}
+.ant-steps-item-title::after{
+	background-color: var(--secondary-blue) !important;
+}
+.ant-steps-item-finish .ant-steps-item-title::after{
+	background-color: var(--primary-orange) !important;
+}
+
+.ant-steps-item-active .ant-steps-item-icon{
+	background-color: var(--primary-orange) !important;
+
+}
+
+.ant-steps-item-title{
+	color: white !important;
+	font-family: Montserrat;
+	//styleName: H/H3;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24.38px;
+	letter-spacing: 0.1em;
+
+}

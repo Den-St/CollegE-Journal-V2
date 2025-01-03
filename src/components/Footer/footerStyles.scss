@@ -1,0 +1,220 @@
+
+footer {
+    display: flex;
+}
+
+.footer__content {
+    display: flex;
+    margin-top: 180px;
+    height: 240px;
+}
+
+.footer__logo {
+    position: absolute;
+    left: 9.8%;
+    max-width: 20.8%;
+    z-index: 1;
+}
+
+.footer__title {
+    margin-top: 20px;
+    color: var(--theme-white, #FFF);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.footer__circle {
+    position: absolute;
+    z-index: 1;
+    margin-left: 25.7%;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: #052142;
+    filter: blur(60px);
+}
+
+.btn__lists {
+    display: flex;
+    position: absolute;
+    gap: 100px;
+    max-width: 630px;
+    justify-content: space-between;
+    margin-left: 55%;
+}
+
+.footer__list {
+    max-width: 300px;
+}
+
+.footer__list li {
+    margin-bottom: 30px;
+}
+
+.fList__title {
+    margin-bottom: 30px;
+    color: var(--primary-yellow, var(--primary-orange));
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.fList__btn {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.2s linear;
+    background-color: transparent;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+}
+.fList__btn:hover{
+    color:white;
+}
+
+
+.fList__btn:hover {
+    color: var(--theme-white, #FFF);
+}
+
+.bottom__title {
+    // position: absolute;
+    // left: 9.8%;
+    margin-top: 60px;
+    margin-left: 9.8%;
+    padding-bottom: 30px;
+}
+
+.bottom__text {
+    color: var(--secondary-gray, var(--primary-gray));
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.footer__content{
+    &.dark{
+        .footer__title{
+            color:#FFF;
+        }
+        .fList__title{
+            color:var(--primary-orange);
+        }
+        .fList__btn:hover{
+            color:var(--primary-orange);
+        }
+        .fList__btn{
+            color: var(--secondary-gray, var(--primary-gray));
+        }
+        .footer__circle{
+            display: none;
+        }
+    }
+    &.light{
+        footer{
+            background-color: #FFF;
+        }
+        .footer__content{
+            background-color: #FFF;
+        }
+        .footer__title{
+            color:var(--primary-black,var(--primary-dark));
+        }
+
+        .fList__btn{
+            color:var(--primary-black,var(--primary-dark));
+        }
+        .fList__btn:hover{
+            color:var(--primary-orange);
+        }
+        .bottom__text{
+            color:var(--primary-dark);
+        }
+      
+        .fList__title{
+            color:var(--primary-orange);
+        }
+        .footer__circle{
+            display: none;
+        }
+        &.home{
+            .footer__title{
+                color:var(--primary-black,var(--primary-dark));
+            }
+        }
+    }
+    &.home{
+        .footer__circle{
+            display: block;
+            background: #2c84e9b0;
+            filter: blur(60px); 
+        } 
+    }
+}
+
+@media screen and (max-width:780px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        height: unset !important;
+        align-items: center;
+        gap:30px;
+    }
+    .footer__circle{
+        display: none !important;
+    }
+    .footer__logo{
+        position: static;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: unset;
+    }
+    .btn__lists{
+        flex-direction: column;
+        position: static;
+        margin-left: unset !important;
+        align-items: center;
+        gap:40px;
+    }
+    .footer__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__list_socials{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .bottom__text{
+        font-family: Alegreya Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0;
+        text-align: left;
+        color:#676767;
+    }
+    .bottom__title{
+        margin-left: 25px;
+    }
+}

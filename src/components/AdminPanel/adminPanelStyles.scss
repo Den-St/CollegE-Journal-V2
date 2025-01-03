@@ -1,0 +1,498 @@
+.adminPanelMain__container{
+    display: flex;
+    flex-direction: column;
+    padding:229px 70px 0 70px;
+    gap:40px;
+    align-items: center;
+    font-family: Montserrat !important;
+    background-image: url('../../assets/images/signInBackground.png');
+}
+.fillterImg{
+    fill:white;
+    
+}
+
+.adminPanelMain__title{
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+.adminPanel__container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 80%;
+}
+
+.adminPanel__title{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 81px;
+}
+
+.adminPanelControllers__container{
+    display: flex;
+    gap:28px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.adminPanelControllerItem__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    justify-content: center;
+    box-shadow: 0 0 15px 0 #D4D4D41A;
+    padding: 46px 50px;
+    width: 413px;
+    width: 30%;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 10px 5px;
+}
+.adminPanelControllerIcon{
+    transition: 0.2s;
+}
+
+
+.adminPanelControllers__title{
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.2s;
+    text-align: center;
+    font-family: Montserrat;
+
+}
+.adminPanelStats__container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.adminPanelStatsBlocks__container{
+    display: flex;
+    gap:25px;
+    flex-wrap: wrap;
+}
+
+.adminPanelStatBlock__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    border-radius: 10px 5px;
+    padding: 20px 80px;
+    width: 635px;
+}
+.adminPanelStatName{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.adminPanelStatsItems__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.adminPanelStatItem__container{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.adminPanelStatItemDay__container{
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+}
+.adminPanelStatsItems__container{
+    display: flex;
+    gap:30px;
+}
+.adminPanelStatItemName{
+    color:var(--primary-gray);
+    font-size: 18px;
+    font-weight: 400;
+}
+.adminPanelStatItemWeek{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Alegreya Sans;
+}
+.adminPanelStatItemMonth{
+    font-size: 18px;
+    font-weight: 400;
+}
+.adminPanelStatBlocs__container{
+    display: flex;
+    gap:30px;
+}
+.adminPanelStatsItem__container{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.adminStudentListContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    font-family: Montserrat;
+    background-image: url('../../assets/images/signInBackground.png');
+}
+.createGroup_form{
+    width: 82.5%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.createGroupFormSelects__container{
+    width: 100%;
+}
+.createGroupFormSelects__container{
+    gap:30px;
+}
+
+.createGroupCuratorSelect__container{
+    width: 55%;
+}
+@media screen and (max-width:900px) {
+    .createGroupSelect__container{
+        width:100%;
+    }
+    .createGroupCuratorSelect__container{
+        width: 100%;
+    }
+}
+.dark{
+    .adminPanelControllerItem__container{
+        background-color: #0a1d26;
+        box-shadow: 0 0 15px 0 #D4D4D41A;
+    }
+    .adminPanelStatBlock__container{
+        background-color: #0a1d26;
+        box-shadow: 0 0 15px 0 #D4D4D41A;
+    }
+    .adminPanelMain__title{
+        color:white;
+    }
+    .adminPanel__title{
+        color:var(--primary-gray);
+    }
+    .adminPanelControllers__title{
+        color:#797979;
+    }
+    
+    .adminPanelControllerIcon{
+        fill:var(--primary-gray);
+    }
+    
+    .adminPanelStatName{
+        color:white;
+    }
+    .adminPanelStatItemDay__container{
+        color:white;
+    }
+    .adminPanelStatItem__container{
+        color:white;
+    }
+    .adminPanelStatName{
+        color:white;
+    }
+    .adminPanelStatItemName{
+        color:var(--primary-gray);
+    }
+    .adminPanelStatItemWeek{
+        color:white;
+    }
+    .adminPanelStatItemMonth{
+        color:#797979;
+    }
+    .robotSvg_path{
+        stroke: white;
+    }
+    .noSchedule_title{
+        color:white;
+    }
+    .noSchedule_text{
+        color:white;
+    }
+    .adminPanelScheduleSettingsInput__cover{
+        background-color: var(--secondary-blue);
+        color:white;
+        path{
+            stroke: white;
+            fill:transparent;
+        }
+    }
+    .adminPanelControllerItem__container.activeSection{
+        .adminPanelControllerIcon{
+            fill:var(--primary-orange);
+        }
+        .adminPanelControllers__title{
+            color:var(--primary-orange);
+        }
+    }
+    .lessonsScheduleDay__header{
+        color:var(--primary-gray);
+    }
+    .lessonsScheduleLessonNumber{
+        color:white;
+    }
+    .lessonsScheduleLessonName{
+        color:var(--primary-gray);
+    }
+    .lessonsScheduleLessonGroup{
+        font-weight: 400;
+        font-size: 20px;
+        color:var(--primary-gray);
+
+    }
+    .lessonsScheduleDay__header.currentDay{
+        color:var(--primary-orange);
+    }
+    .scheduleTimingsTitle{
+        color:white;
+    }
+    .studentProfielScheduleGoToTasks_container{
+        background-color: var(--secondary-blue);
+    }
+    .studentProfielScheduleGoToTasks_title{
+        color:white;
+    }
+    .studentProfielScheduleGoToTasks_text{
+        color:white;
+    }
+    // svg{
+    //     fill: transparent;
+    // }
+    .magnifierSvg{
+        fill:#ffffff;
+        path{
+            fill:#ffffff;
+        }
+    }
+    .lessonsScheduleLessonGroup:hover{
+        path{
+            stroke:var(--primary-orange);
+        }
+    }
+    .createUser__button{
+        color:white;
+    }
+    .select_wrapper{
+        background-color: var(--secondary-blue);
+    }
+    .ant-select-selector{
+        background-color: var(--secondary-blue) !important;
+        border:none !important;
+        font-weight: 500;
+    }
+    .select_label{
+        color:white;
+    }
+    .createUser__button{
+        background-color: var(--secondary-blue);
+    }
+    .groupsCourseItem__title{
+        color:white;
+    }
+    .groupItem__container{
+        background-color: #0a1d26;
+        color:white;
+    }
+}
+.light{
+    .adminPanelControllerItem__container{
+        background-color: white;
+        box-shadow: 0 0 15px 0 rgb(184, 184, 184);
+    }
+    .adminPanelStatBlock__container{
+        background-color: white;
+    }
+    .adminPanelControllerIcon{
+        fill:#797979;
+    }
+    .adminPanelStatItemName{
+        color:#797979;
+    }
+}
+.adminPanelControllerItem__container:hover{
+    .adminPanelControllerIcon{
+        fill:var(--primary-orange);
+    }
+    .adminPanelControllers__title{
+        color:var(--primary-orange);
+    }
+}
+.studentFilltersAdminPanel__container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+.adminPanelStudentList_conrollersContainer{
+    display: flex;
+    gap:15px;
+}
+
+.adminPanelStudentList_add {
+    width: 190px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 5px;
+}
+.adminPanelStudentList_save{
+    width: 190px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 5px;
+}
+.adminPanelStudentList_fillterContainer{
+    display: flex;
+    gap:30px;
+}
+
+.dark{
+    .adminPanelStudentList_add{
+        color:white;
+        background-color: var(--secondary-blue);
+    }
+    .adminPanelStudentList_save{
+        color: white;
+        background-color: #15834C;
+    }
+    .studentTitle{
+        color: white;
+    }
+    .groupFillter{
+        color: white;
+    }
+    .fillterImg {
+        stroke: var(--primary-gray);
+    }
+    .student__container{
+        background:var(--secondary-blue);
+    }
+    .student__info{
+        color: white;
+    }
+    .studentButton{
+        background:var(--secondary-blue);
+        box-shadow: 0px 1px 10px 0px rgba(212, 212, 212, 0.10);
+        color:#FFF;
+    }
+    .studentButton:hover{
+        background: var(--primary-dark);
+    }
+    .main__container{
+        background-color: var(--primary-dark);
+        background-image: url('./../../assets/images/signInBackground.png');
+    }
+    .studentFillters__container:hover{
+        cursor: pointer;
+        transition: 0.2s;
+        .fillterImg{
+            stroke:var(--primary-orange);
+        }
+    }
+    .adminPanelStudentList_teachers_link{
+        color:white;
+    }
+}
+.light{
+    .studentTitle{
+        color: black;
+    }
+    .groupFillter{
+        color: #797979;
+    }
+    .fillterImg {
+        stroke: #797979;
+    }
+    .student__container{
+        box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.10);
+        background:white;
+    }
+    .student__info{
+        color: var(--primary-dark);
+    }
+    .studentButton{
+        background:white;
+        box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.10);
+        color:var(--primary-dark);
+    }
+    .studentButton:hover{
+        background: var(--primary-orange);
+    }
+    .main__container{
+        background-color: white;
+        background-image: url('./../../assets/images/signInBackgroundLight.png');
+    }
+    .studentFillters__container:hover{
+        cursor: pointer;
+        transition: 0.2s;
+        .fillterImg{
+            stroke:var(--primary-orange);
+        }
+    }
+}
+.ant-carousel .slick-slider.adminPanelControllers__slider{
+    display: none;
+}
+@media screen and  (min-width:1441px) {
+    .adminPanelControllerItem__container{
+        width: 29%;
+    }
+    .activeSection{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .adminPanelMain__container{
+        padding: 110px 0px 0px;
+        width: 100%;
+    }
+    .adminPanelMain__title{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: 0.1em;
+    }
+    .adminPanel__title{
+        padding: 0;
+    }
+    .adminPanelControllers__container{
+        display: none;
+    }
+    .ant-carousel .slick-slider.adminPanelControllers__slider{
+        display: block;
+    }
+    .adminPanelControllerItem__container{
+        display: flex !important;
+        align-items: center;
+    }
+    .adminPanelStatsBlocks__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .adminPanelStatBlock__container{
+        padding: 32px 15px;
+        width: 90%;
+    }
+    .adminPanelControllerItem__container{
+        height: 185px;
+    }
+    .fillter_container{
+        margin-left: 0;
+    }
+}

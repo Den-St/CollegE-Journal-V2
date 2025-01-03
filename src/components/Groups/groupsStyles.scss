@@ -1,0 +1,219 @@
+.groupsMain__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 191px 221px;
+    gap:40px;
+    font-family: Montserrat;
+}
+@media screen and (min-width:1441px) {
+    .groupsMain__container{
+        padding: 191px 221px 0 221px;
+    }
+}
+@media screen and (max-width:1440px) {
+    .groupsMain__container{
+        padding: 191px 70px 0 70px;
+    }
+}
+.groupsTop__container{
+    width: 100%;
+    padding: 0 15% 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.groupTitle{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.groupsFillters__container{
+    display: flex;
+    gap:26px;
+    flex-wrap: wrap;
+}
+.groupsFillterItem__container{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.groupYearSelectFilter{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.groupSpecializationFilter{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.groupsCourses__container{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.groupsCourseItem__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.groupsCourseItem__title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.groupCourseItemGroups__container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 30px;
+}
+
+.groupItem__container{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 0 1px 15px 0px #c3bfbf2b;
+    border-radius:10px 5px 10px 5px;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+.dark{
+    .groupTitle{
+        color:white;
+    }
+    .groupYearSelectFilter{
+        color:white;
+    }
+    .groupSpecializationFilter{
+        color:white;
+    }
+    .groupsCourseItem__title{
+        color:white;
+    }
+    .groupItem__container{
+        color:white;
+    }
+    .groupsMain__container{
+        background-image: url('../../assets/images/signInBackground.png');
+    }
+    .groupItem__container:hover{
+        color:var(--primary-orange)
+    }
+    .fillterImg{
+        stroke: white;
+    }
+}
+.light{
+    .groupTitle{
+        color:black;
+    }
+    .groupYearSelectFilter{
+        color:#797979;
+    }
+    .groupSpecializationFilter{
+        color:#797979;
+    }
+    .groupsCourseItem__title{
+        color:#797979;
+    }
+    .groupItem__container{
+        color:black;
+    }
+    .groupsMain__container{
+        background-image: url('../../assets/images/signInBackgroundLight.png');
+    }
+    .groupItem__container:hover{
+        transition: 0.2s;
+        color:var(--primary-orange);
+        box-shadow: 0 1px 15px 0px #9b9b9b3b;
+    }
+    .fillterImg{
+        stroke: #797979;
+    }
+}
+
+.groupsFillterItem__container:hover{
+    cursor:pointer;
+    .fillterImg{
+        transition: 0.2s;
+        stroke: var(--primary-orange);
+    }
+}   
+
+@media screen and (min-width:'1440px'){
+    // .groupsFillters__container{
+    //     margin-left: -11px;
+    // }
+    .groupsTop__container{
+        padding: 0 15% 0 30px;
+        gap:20px;
+    }
+    .groupItem__container{
+        width: 25%;
+        max-width: 350px;
+    }
+    .groupCourseItemGroups__container{
+        column-gap: 36px;
+    }
+    .groupsCourses__container{
+        padding: 0;
+    }
+}
+.ant-carousel .slick-slider.adminPanelGroups_carousel{
+    display: none;
+}
+.ant-carousel .slick-slider.groups_carousel{
+    display: none;
+}
+@media screen and (min-width:780px) {
+    .groupsCourses__container:not(.journalGroups){
+        padding: 0 12%;
+    }
+}
+@media screen and (max-width:780px) {
+    .groupCourseItemGroups__container{
+        display: none;
+    }  
+    .ant-carousel .slick-slider.adminPanelGroups_carousel{
+        display: block;
+        .groupItem__container{
+            width: 300px !important;
+            display: flex !important;
+        }
+    }
+    .groupCourseItemGroups__container{
+        display: none;
+    }  
+    .ant-carousel .slick-slider.groups_carousel{
+        display: block;
+        .groupItem__container{
+            width: 300px !important;
+            display: flex !important;
+        }
+    }
+    .groupsMain__container{
+        padding: 110px 5% 0;
+    }
+    .groupsCourses__container{
+        padding: 0 20px;
+    }
+}
